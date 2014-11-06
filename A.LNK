@@ -1,0 +1,14 @@
+fi zarp
+lib extend
+#debug
+#overlay prog,$constsnts
+beginarea
+#section into zarp.ovl file zarp
+section into zarpa.ovl file zarpa
+section into zarpb.ovl file zarpb
+section into zarpc.ovl file zarpc
+section into zarpd.ovl file zarpd
+section into zarpo1.ovl file zarpo1
+section into zarpo2.ovl file zarpo2
+section into zarpo3.ovl file zarpo3
+endarea

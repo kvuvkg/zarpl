@@ -1,0 +1,191 @@
+
+                      Žƒ€ŒŒ› Ž ‡€‹€’…
+          ‡‚…‡„Ž—Š€Œˆ ŽŒ…—…› Žƒ€ŒŒ› Ž„ˆ€ŠŽ‚›… „‹Ÿ ‚‘…• ‡€„€—
+                         ‡€‹€’€ †ŠŽ
+       *  COPYBD   -  ŠŽˆˆ €‡ „€›• € „ˆ‘Š…’›  
+       *  DOPFORMA -  ŽŠ€‡›‚€…’ „ŽŽ‹ˆ’…‹œ“ž ’€‹ˆ–“
+                      ƒŽ„,Œ…‘Ÿ–,„ˆ,—€‘›,‘…„ˆ‰ ‡€€Ž’ŽŠ,Ž‹œˆ—›…
+                      (€‡€ BASE)
+       *  FORMBASE -  ’…•Ž‹Žƒˆ—…‘Šˆ… Ž…€–ˆˆ,‘Ž‡„€ˆ…,“„€‹…ˆ…,
+                      ‡€Š…‹…ˆ… Ž„€‡„…‹…ˆ‰,‘†€’ˆ… ˆ”ŽŒ€–ˆˆ,
+                      ……•Ž„ Š „“ƒŽŒ“ Œ…‘Ÿ–“,“Š€‡€ˆ… „“ƒŽƒŽ Œ…‘Ÿ–€
+                      (€‡€ SSP) à áç¥â ­ ¤¡ ¢®ª
+
+       *  LINEMODE -  ‚›‘‚…—ˆ‚€…’ ‚ –ˆ”€• „ŽŽ‹ˆ’…‹œ“ž ’€‹ˆ–“(€‘—…’€Ÿ
+                      ˆ”ŽŒ€–ˆŸ) ˆ‡ €‡ BASE
+       *  MESPREM  -  €‘—…’ Œ…‘Ÿ—Ž‰ …Œˆˆ(€‡€ BASE)                        
+          OBNK     -  Ž“‹…ˆ… ŠŽ……Š ‚ €‡… BASE
+       *  ORGAFORM -  Œ…ž „‹Ÿ …—€’ˆ ‚›•Ž„›• ”ŽŒ(‘‚Ž„›•) Ž Ž„€‡„…‹…ˆž
+                      Ž–…„“€ NAKOALL - €ŠŽ‹…ˆ… ‚‘…• …Ž•Ž„ˆŒ›• ‘“ŒŒ ˆ 
+                      €‘—…’ Ž—’Ž‚ŽƒŽ ‘Ž€ „‹Ÿ €‹ˆŒ…’Ž‚        
+       * OUTF13ZP  -  …—€’œ ‚…„ŽŒŽ‘’ˆ Ž 13 ‡€‹€’…(€‡€ BASE)       
+       * OUTFORGA  -  …—€’œ ‚…„ŽŒŽ‘’…‰ 
+         PROC OUTFKRED  -  ‡€ Š…„ˆ’(€‡€ KREDIT)
+         PROC OUTFREES  -  €‹ˆŒ…’›,Ž—’Ž‚›‰ ‘Ž(€‡€ ALIMENT)
+         PROC OUTFBANK  -  ……—ˆ‘‹…ˆ… ‚ €Š(€‡€ KREDIT)
+         PROC OUTFGOST  -  ……—ˆ‘‹…ˆ… ‚ ƒŽ‘‘’€•(€‡€ KREDIT)
+         OUTFPLA1  -  …—€’œ ‹€’…†Ž‰ ‚…„ŽŒŽ‘’ˆ Ž „…Ž…’€Œ
+       * OUTFPLAZ  -  …—€’œ ‹€’…†Ž‰ ‚…„ŽŒŽ‘’ˆ € ‚›„€—“ ‡/‹€’› ˆ €‚€‘€
+                      (€‡€ BASE)
+       * OUTFPLPR  -  …—€’œ ‹€’ð†ŽƒŽ Ž“—…ˆŸ
+       * OUTFRALI  -  …—€’œ €‘—…’ŽƒŽ ‹ˆ‘’Š€
+       * OUTFVEKT  -  …—€’œ ‚…„ŽŒŽ‘’ˆ ‡/‹ Ž‚…Œ…™ˆŠ€Œ ˆ ‘„…‹œ™ˆŠ€Œ
+       * OUTFVENA  -  …—€’œ ‚…„ŽŒŽ‘’ˆ €—ˆ‘‹…ˆ‰ ˆ “„…†€ˆ‰ ‡/‹€’›
+       * OUTFVEPE  -  …—€’œ ‚…„ŽŒŽ‘’ˆ € ‚›‹€’“ …‘ˆ‰ €Ž’€ž™ˆŒ …‘ˆŽ…€Œ
+       * OUTFVEVZ  -  …—€’œ ‚…„ŽŒŽ‘’ˆ ‚‡Ž‘Ž‚ …‘ˆŽ›•,Ž”‘Žž‡›•
+       * OUTFVKAT  -  €ŠŽ‹…ˆ… „€›• Ž Š€’…ƒŽˆŸŒ 
+       * OUTFZATR  -  …—€’œ ‚…„Ž‘’ˆ Ž ‡€’€’€Œ(€‡€ ZATRAT)
+         POSMEN    -  ‚›‚Ž„ € Š€ Œ…ž Ž Ž‘ŽˆŸŒ „‹Ÿ „…’…‰(‚›Ž ‚…„ŽŒŽ‘’…‰ Ž 
+                      Ž‘ŽˆŸŒ)
+         PR        -  …—€’œ ’€…‹Ÿ “—…’€ €Ž—…ƒŽ ‚…Œ…ˆ
+         PRO       -  ‚…„…ˆ… ‘€‚Ž—ˆŠ€ Ž Ž—ˆŒ ‚ˆ„€Œ Ž‹€’(€‡€ PROCH)
+         PRO1      -  ‡€ˆ‘œ Ž—ˆ• ‚ˆ„Ž‚ Ž‹€’ ‚ €‡“ BASE
+         PROBA     -  ‚…„…ˆ… ‘€‚Ž—ˆŠ€ Ž ˆƒ€„…(€‡€ SKL)
+         PROBA1    -  €‘—…’ „Ž‹€’ ‚ ˆƒ€„… ˆ ‡€ˆ‘œ ˆ”ŽŒ€–ˆˆ ‚ €‡“ BASE                                                                                
+                      €‡€ SKL
+         PROP      -  …—€’œ ‚ ‚…„ŽŒŽ‘’Ÿ• ˆ € Š€… ‘“ŒŒ Žˆ‘œž
+         PROTCT    -  ŽšŸ‚‹…ˆ… ƒ‹Ž€‹œ›• ……Œ…›• €‡‚€ˆŸ …„ˆŸ’ˆŸ,
+                      ŽŒ…€ …„ˆŸ’ˆŸ,€‘—…’ŽƒŽ ‘—…’€ ˆ €Š€(€‡€ PASP)
+       * RASCHETY  -  €‘—…’ Ž‹œˆ—›• ˆ ‘…„ˆ•(€‡› BASE,SRD,SEBA)
+       * RECALC    -  €‘—…’ Ž„Ž•Ž„ŽƒŽ €‹Žƒ€ (€‡€ BASE,REC,REC5,REC10)  
+                      €‘—…’ Ž”‘Žž‡›• ‚‡Ž‘Ž‚ ˆ ……‘—…’ “„…†€ˆ‰ €‚’ŽŒ€’ˆ
+                      —…‘Šˆ
+         S_PL      -  ‘‚…„…ˆŸ Ž ‡/‹€’… €Ž’€ž™ˆ• ˆ‡ €‡ BASE(Œ…ž)
+                  
+         S_ZPL     -  ‘‚…„…ˆŸ Ž ‡/‹ Ž 1 –…•“
+         S_ZPL1    -  ‘‚…„…ˆŸ Ž ‡/‹ Ž ƒ“… –…•Ž‚
+         S_ZPL2    -  ‘‚…„…ˆŸ Ž ‡/‹ Ž ‚‘…Œ Ž„€‡„…‹…ˆŸŒ
+         SC        -  …—€’œ ˜€Šˆ (‘‚…„…ˆŸ Ž ‡/‹)
+
+       * SCRIPT    -  …—€’œ ‚ ‚…„ŽŒŽ‘’Ÿ• ˆ € Š€… ‘“ŒŒ Žˆ‘œž
+          
+       * SONGOPER  -  Œ“‡›Š€ 
+         
+         SPR       -  ‘€‚Ž—ˆŠ „Ž‹€’ € „…’…‰(€‡› PO_1 - PO_7)
+                                                                     
+       * SPRMENGR  -  ‚…„…ˆ… ‘€‚Ž—ˆŠŽ‚(‘Ž‡„€ˆ…,“„€‹…ˆ…,…—€’œ,
+                      ‚‚Ž„ ˆ”ŽŒ€–ˆˆ)€‡€  SPRPARM                                             
+                                
+         SPRRAB    -  …—€’œ ‘€‚Ž—ˆŠ€ €Ž’€ž™ˆ•(€‡€ SUPERLIS)
+         
+       * SPRVOU    -  ‚…„…ˆ… ‘€‚Ž—ˆŠŽ‚: €‘Ž’€ …„ˆŸ’ˆŸ(€‡€ PASP),
+                      „ŽŽ‹ˆ’…‹œ›• ‘‚…„…ˆ‰,Œ€‘ŽŠ (€‡€ SPROBR),ƒ€”ˆŠŽ‚
+                      €Ž’›(€‡€ SRD)
+                      
+        TAB        -  …—€’œ ’€…‹Ÿ
+        
+      * USERGUID   -  ŽŒŽ™œ Ž ‡€„€—… ‚›‘‚…—ˆ‚€…’‘Ÿ Ž F10
+        
+      * VREMPERE   -  ……‚Ž„ ‚ „“ƒˆ… Ž„€‡„…‹…ˆŸ €Ž’ˆŠŽ‚
+        
+      * VREMSOBR   -  ‘Ž ‚‘…‰ ˆ”ŽŒ€–ˆˆ Ž ……‚…„…›• €Ž’ˆŠŽ‚ 
+                      ˆ ‡€ˆ‘œ ˆ”ŽŒ€–ˆˆ ‚ ‹ˆ–…‚Ž‰ ‘—…’ Ž Ž‘Ž‚ŽŒ“ Œ…‘’“                            
+                      €Ž’›
+                      
+        XLMEN      -  €‘—…’ Š’“,„Ž‹€’ Ž ˆƒ€„… (Œ…ž)                                                              
+        
+        ZAPI       -  ‡€ˆ‘œ „Ž‹€’ € „…’…‰ ˆ‡ €‡ PO_1-PO_7 ‚ €‡› BASE Ž
+                      ’€…‹œŽŒ“ ŽŒ…“
+                      
+      * ZARP       -  Ž‘Ž‚Ž… Œ…ž Ž ‡/‹(‚‚Ž„ €Ž‹Ÿ ‚ €‡“ PASSWORD)
+      
+      * ZARPARCH   -  ‚…„…ˆ… €•ˆ‚€ (‚›Ž Œ…‘Ÿ–€,ˆ‡Œ……ˆ…,„Ž€‚‹…ˆ…,“„€‹…-
+                      ˆ… ˆ”ŽŒ€–ˆˆ)€‡› SEBA
+
+                                               
+      * ZARPCORA   -  Œ…ž Ž €‘—…’Ž‰ ˆ”ŽŒ€–ˆˆ(‚›Ž ˆ ‚…„…ˆ… „€›•)
+                      €‡€ BASE       
+      
+      * ZARPDOLG   -  ‡€Ž‹…ˆ… „Ž‹ƒŽ‚…Œ…Ž‰ ˆ”ŽŒ€–ˆˆ(€—ˆ‘‹…ˆŸ ˆ “„…-
+                      †€ˆŸ)
+      * ZARPINFO   -  ‡€Ž‹…ˆ… Ž…€’ˆ‚Ž‰ ˆ”ŽŒ€–ˆˆ à áç¥â â ¡¥«ï
+                                                    
+        ZARPOUTF   -  …—€’œ ‚›•Ž„›• ”ŽŒ Ž Ž„€‡„…‹…ˆž ¢¥¤®¬ ¯® §¯ ¯® ®à£(orscvedo)
+        
+      * ZARPLISC   -  ‚…„…ˆ… ‹ˆ–…‚ŽƒŽ ‘—…’€ à áç¥â ­ ¤¡ ¢®ª
+                                                         
+      * ZARPPOST   -  ‡€Ž‹…ˆ… Ž‘’ŽŸŽ‰ ˆ”ŽŒ€–ˆˆ ª®à á¯à ¢ à ¡
+        
+      * ZARPPROC   -  Ž‘…„“› ŽŒŽ™ˆ(HELP,HELPLIST),ŠŽ’Ž‹Ÿ ‚…‹ˆ—ˆ› 
+                      ‡€€Ž’€›• ‘“ŒŒ(TESTSVON),ŠŽ’Ž‹œ ‘’ŽŠ ‚ ‹ˆ–…-
+                      ‚ŽŒ ‘—…’…(SCANNA),‘Ž‡„€ˆ… ƒ€”ˆŠŽ‚ €Ž’› (SETMESP)
+                      ŠŽ’Ž‹œ ŠŽ–€ ‘’€ˆ–› ˆ …—€’ˆ(ENDPAGE)
+              COPYBD.PRG
+      GOL
+            FORMBASE.PRG
+delepodr   comprpod newpodr  modipodr movefile gotonewm  setmes  umolch
+reorga reorlist prem13zp
+             INS.PRG
+fivesum1 fivesum2 upd1 upd2 
+             MESPREM.PRG
+mpremget commproc onemenpr ko13zget
+          ORGAFORM.PRG
+nakoall  printfrm
+          OUTFORGA.PRG
+shapked outfbir shapbir outfvedo outfstud shapstud outfpisp outfkvar shapkvar
+shaptab outftel shaptel outfrees shaprees shapalim shapalba outfbank shapbank
+outfgost shapgost
+               OUTFPLA1.PRG
+       itogpoli1
+            OUTFPLAZ.PRG
+   itogpoli
+          OUTFPLPR.PRG
+prtplpr
+          OUFVEKT.PRG
+endktu shapvekt shapktu atandre
+         OUTFVENA.PRG
+pvzp shappvzp sdzp shapsdzp
+         OUTFVEPE.PRG
+shappens
+          OUTFVEVZ.PRG
+shapvevz
+        OUTFVKAT.PRG
+dopktg shapvkat prepvkat vremvkat recovkat
+       OUTFZATRAT.PRG
+     prepzatr recozatr recovrem zatroutf shapzatr
+        RACSHETY.PRG
+nazad twosum 
+         RECALC.PRG
+filesum upd ums upart uprot
+        S_PL.PRG
+     sc
+      S_ZPL.PRG
+sc
+       SPR.PRG
+az
+       SPRMENGR.PRG
+sprsort sprprint sprdel sprormod
+       SPRVOU.PRG
+readmast helpmask makeopen sprsuder testsuder paspinpt helporg inptpoal
+readpoal sprkalen sdomadi readdoma inptsorg readsorg sprtiv testzero testtype
+          USERGUID.PRG
+tupefile
+        VREMPERE.PRG
+ makevrem newman
+        VREMSOBR.PRG
+ errnospc
+          ZARP.PRG
+ left_shi rigth_shi asknewp firstpic indexsup readsrds greatsrd testyear
+ mysetcol
+         ZARPRACH.PRG
+ itogarch sayarch
+        ZARPCORA.PRG
+getchis
+        ZARPDOLG.PRG
+edlu
+       ZARPINFO.PRG
+recapodr zarpoper listmens mydbedit ktuget avavget tabelget premget getkodna
+maininfp saynaud itognu dnupsort nachvzo severaio raikoeff replrait
+       ZARPLISC.PRG
+down_shi up_shi nachint codrolo
+        ZARPPOUTF.PRG
+podrform rascvedo frscvedo orscvedo shaprscv rdrsclst endshap zaversh 
+rascvedo1 orscvedo1 
+         ZARPPOST.PRG
+prepgetp locaspr
+        ZARPPROC.PRG
+openabc askyesno nullkeyb addkey pressint presscr pressesc dosexit
+listmenu boxer helpkod readmskm errortxt mountdsc freadssp vvodssp
+fldokdz setmesp readflds calledit sssb blankrec dadopo endpage
+topround testkale testsvon   
+      

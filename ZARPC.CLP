@@ -1,0 +1,4 @@
+zarplisc
+zarpcora
+dopforma
+linemode

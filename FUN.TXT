@@ -1,0 +1,27 @@
+***************************************************************************
+Func Round_
+Para Summa,Kol
+Private Mod,Ret,Int
+Summa = Summa/100
+
+Return ( Round(Summa,2)*100 )
+
+Sign = iif(Summa<0,-1,1)
+Summa = abs(Summa)
+Int = int(Summa)
+Mod = mod(int,1000)
+Ret = int(int/1000)*1000
+if Summa = 0
+   Ret = 0
+elseif Summa <= 700
+   Ret = 500
+elseif Summa <= 1000
+   Ret = 1000
+elseif Mod >= 0 .and. Mod < 300
+   Ret = Ret + 0
+elseif Mod >= 300 .and. Mod < 700
+   Ret = Ret + 500
+else
+   Ret = Ret + 1000
+end
+Return ( Sign*Ret*100 )

@@ -1,0 +1,4 @@
+OUTFVENA
+OUTFVEKT
+OUTFZATR
+outfvkat
