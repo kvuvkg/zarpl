@@ -401,30 +401,43 @@ do while .t.
         do case
           case MyPress=13  && изменение фамилии
              setcolor(bcol)
-             @ 10,3,19,60 box frame+'░'
-             @ 19,4 say 'Изменение таб.номера и Ф.И.О.'
+             @ 4,3,22,60 box frame+'░'
+             @ 22,4 say 'Изменение таб.номера и Ф.И.О.'
              sele super
              old_super=recno()
              store super->fio to newfio,oldfio
              store super->tn  to newtn, oldtn
+             store super->fam to newfam, oldfam
+             store super->name to newnam, oldnam
+             store super->ot to newot, oldot
              use superlist index supertn,superpono alias super
              setcolor(ecol)
-             @ 12,4 say 'Вводите данные или нажмите Esc - отказ'
+             @ 6,4 say 'Вводите данные или нажмите Esc - отказ'
              setcolor(stdc)
              set curs on
-             @ 13,5 say '"Старый" таб.номер  '+oldtn
-             @ 14,5 say '"Новый"  таб.номер ' get newtn;
+             @ 7,5 say '"Старый" таб.номер  '+oldtn
+             @ 8,5 say '"Новый"  таб.номер ' get newtn;
                     valid (if(newtn==oldtn,.t.,TestTabN(newtn,14,31));
                            .and. ! (' ' $ newtn))
-             @ 16,5 say '"Старая" фамилия    '+oldfio  &&super->fio
-             @ 17,5 say '"Новая"  фамилия   ' get newfio
+             @ 10,5 say '"Старое" ФИО      '+oldfio  &&super->fio
+             @ 11,5 say '"Новое"  ФИО     ' get newfio
+             @ 13,5 say '"Старая" фамилия  '+oldfam  &&super->fam
+             @ 14,5 say '"Новая"  фамилия ' get newfam
+             @ 16,5 say '"Старое" имя      '+oldnam  &&super->name
+             @ 17,5 say '"Новое"  имя     ' get newnam
+             @ 19,5 say '"Старое" отч.     '+oldot  &&super->ot
+             @ 20,5 say '"Новое"  отч.    ' get newot
              read
              set curs off
              sele super
              use superlist index superpono,supertn alias super
              go   old_super
              if lastkey()<>27
-                repl super->fio with newfio, super->tn with newtn
+                repl super->fam  with newfam
+                repl super->name with newnam
+                repl super->ot with newot
+                repl super->fio with newfio
+                repl super->tn with newtn
                 repl basef->tn  with newtn
              endif
           case MyPress=-1
