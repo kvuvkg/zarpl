@@ -12,7 +12,10 @@ set color to &stdc
 declare allna[12], allud[12],alim[2]
 alim[1]=0
 alim[2]=0
+
 sele basef
+
+&& Ç·• ≠†Á®·´•≠®Ô
 allna[1]=vo1
 allna[2]=vo2
 allna[3]=vo3
@@ -25,6 +28,8 @@ allna[9]=vo9
 allna[10]=vo10
 allna[11]=vo11
 allna[12]=vo12
+
+&& Ç·• „§•‡¶†≠®Ô
 allud[1]=ku1
 allud[2]=ku2
 allud[3]=ku3
@@ -37,6 +42,7 @@ allud[9]=ku9
 allud[10]=ku10
 allud[11]=ku11
 allud[12]=ku12
+
 sele basef
 all_mes=''
 all_alim=''
@@ -640,14 +646,14 @@ proc Upd
         Endif
         SELE basef
         
-        if s1 <=1710.01 * k_det .and. k_det#0           &&  10*m
-            s1 = s1 - k_det*913.50 &&     - 609.00      &&     ÅÄãÄòéÇ ûêÄ Æ‚ 01.01.2014 £.
+        if s1 <=1930.01 * k_det .and. k_det#0           &&  10*m
+            s1 = s1 - k_det*1033.50 &&     - 609.00      &&     ÅÄãÄòéÇ ûêÄ Æ‚ 01.01.2014 £.
         endif
-        if s1 <=1710.01 .and. k_det=0             
-            s1 = s1 - 609.00                            &&     ÅÄãÄòéÇ ûêÄ Æ‚ 01.01.2014 £.
+        if s1 <=1930.01 .and. k_det=0             
+            s1 = s1 - 689.00                            &&     ÅÄãÄòéÇ ûêÄ Æ‚ 01.01.2014 £.
         endif
-        if s1 <=1710.01 .and. NP='2'                    && óÖêçéÅõãÖ 150              
-            s1 = s1 - 913.50                            &&     ÅÄãÄòéÇ ûêÄ Æ‚ 01.01.2014 £.
+        if s1 <=1930.01 .and. NP='2'                    && óÖêçéÅõãÖ 150              
+            s1 = s1 - 1033.50                            &&     ÅÄãÄòéÇ ûêÄ Æ‚ 01.01.2014 £.
         endif
         
         do uBezr  with (spartb+spartb1),u4
@@ -670,13 +676,13 @@ proc Upd
                 do uGOS  with spartOC,u4
                 g =  u4
                 a = a - c/100 - b/100 
-                U=a*0.15
+                U=a*0.18
             ENDCASE
             &&*********************
         CASE  s1<=0  
             U=0
         CASE S1>=0
-            U=s1*0.15
+            U=s1*0.18
         ENDC
         U=round_(U*100,-4)
         sele basef
@@ -720,18 +726,20 @@ proc Ums
     ENDI
     sele basef
     RETU
-
-**Ø•≠·®Æ≠ ·Æ ¢·•Â 2 Ø‡ÆÊ•≠‚†
+    
+&& 913 - Ø•≠·®Æ≠ ·Æ ¢·•Â 3.6 Ø‡ÆÊ•≠‚†
 proc Upart
     SET TALK OFF
     PARA A1,U
     priv a
     a=a1
-    A=A/100
-    U=A*0.036
-    U=round_(U*100,-4)  
+*    A=A/100
+*    U=A*0.036
+*    U=round_(U*100,-4)
+    U = 0
     RETU
-    
+
+&& 911 - ¢Æ•≠≠.
 proc Upartz
     SET TALK OFF
     PARA A1,U
@@ -742,16 +750,19 @@ proc Upartz
     U=round_(U*100,-4)  
     RETU
 
+&& 945 - Ééë ëéñ çÖôüëí ëãìóÄà
 proc UGOS
     SET TALK OFF
     PARA A1,U
     priv a
     a=a1
-    A=A/100
-    U=A*0.02
-    U=round_(U*100,-4)
+*    A=A/100
+*    U=A*0.02
+*    U=round_(U*100,-4)
+    u = 0
     RETU
 
+&& 912 - Ø‡Æ‰.
 proc Uprof
     SET TALK OFF
     PARA A1,U
@@ -764,13 +775,14 @@ proc Uprof
     U=round_(u*100,-4)
     RETU
 
+&& 914
 proc UBezr
     SET TALK OFF
     PARA A1,U
     priv a
     a=a1
-    *A=INT(A/100)
-    A=A/100
-    U=A*0.026
-    U=round_(u*100,-4)
+*    A=A/100
+*    U=A*0.026
+*    U=round_(u*100,-4)
+    U = 0
     RETU
