@@ -917,41 +917,42 @@ setcolor(stdc)
 @ 6,1 say 'Можно добавить              '+;
           ltrim(str(int(diskspace(addrdisk)/(lsebaf*12+lbasef))))
 return
-*
+
 proc SayNaUd
-para nach,sr,nu
-setcolor(stdc)
-if nach
-   @ sr,2  SAY kmn&nu
-   @ sr,6  say vo&nu
-   @ sr,29 say if(dn&nu=0,'      ',str(dn&nu/100,6,2))
-   @ sr,35 say if(svon&nu=0,'         ',str(svon&nu/100,10,2))
-   IF vo&nu<>' '
-     SELE svo
-     seek basef->vo&nu
-     IF EOF()
-        @ sr,11 SAY 'Kод неверен '
-     ELSE
-        @ sr,11 SAY NAIM
-     ENDIF
-   ENDI
-else
-   @ sr,46 say kmu&nu
-   @ sr,49 say ku&nu
-   IF ku&nu<>' '
-     SELE suder
-     seek basef->ku&nu
-     IF EOF()
-        @ sr,54 SAY 'Kод неверен '
-     ELSE
-        @ sr,54 SAY NAIM
-     ENDIF
-   ENDI
-   @ sr,69 say if(basef->sku&nu=0,'         ',str(basef->sku&nu/100,11,2))
-endif
-sele basef
-return
-*
+   para nach,sr,nu
+   setcolor(stdc)
+   if nach
+      @ sr,2  SAY kmn&nu
+      @ sr,6  say vo&nu
+      @ sr,29 say if(dn&nu=0,'      ',str(dn&nu/100,6,2))
+      @ sr,35 say if(svon&nu=0,'         ',str(svon&nu/100,10,2))
+      IF vo&nu<>' '
+        SELE svo
+        seek basef->vo&nu
+        IF EOF()
+           @ sr,11 SAY 'Kод неверен '
+        ELSE
+           @ sr,11 SAY NAIM
+        ENDIF
+      ENDI
+   else
+      @ sr,46 say kmu&nu
+      @ sr,49 say ku&nu
+      IF ku&nu<>' '
+        SELE suder
+        seek basef->ku&nu
+        IF EOF()
+           @ sr,54 SAY 'Kод неверен '
+        ELSE
+           @ sr,54 SAY NAIM
+        ENDIF
+      ENDI
+      @ sr,69 say if(basef->sku&nu=0,'         ',str(basef->sku&nu/100,11,2))
+   endif
+   sele basef
+   return
+
+
 proc itogNU
 para ln,repl_or_no,say_or_no
 priv nac,ude,dolg,idolg,r_o_n,s_o_n
