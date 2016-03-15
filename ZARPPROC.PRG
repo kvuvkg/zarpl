@@ -967,21 +967,21 @@ sele &a1
 return (ret_kod)
 *
 func TestSvon
-para v,u
-v=round_(v)
-priv scr,ocol
-if v>=99999999999
-   Scr=savescreen(23,0,24,79)
-   ocol=setcolor(stdc)
-   @ 23,0 clear
-   do ErrorTxt with 'Значение '+if(type('M->u')='N','удержания','начисления ')+;
-                    ltrim(str(v/100))+' больше 99999999999'
-   restscreen(23,0,24,79,Scr)
-   setcolor(ocol)
-   return 0
-else
-   return v
-endif
+    para v,u
+    v=round_(v)
+    priv scr,ocol
+    if v>=99999999999
+        Scr=savescreen(23,0,24,79)
+        ocol=setcolor(stdc)
+        @ 23,0 clear
+        do ErrorTxt with 'Значение '+if(type('M->u')='N','удержания','начисления ')+;
+                       ltrim(str(v/100))+' больше 99999999999'
+        restscreen(23,0,24,79,Scr)
+        setcolor(ocol)
+        return 0
+    else
+        return v
+    endif
 *
 func MesVybor
 para txt_m
