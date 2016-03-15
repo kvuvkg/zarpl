@@ -48,7 +48,7 @@ all_mes=''
 all_alim=''
 all_shtr=''
 stor 0 to sprof,spart, alimtst, sbertst, sbertst1, alim_sum, uchtst ,spartb,spartoc
-stor 0 to sprof1,spart1,spartb1,spartoc1,k1
+stor 0 to sprof1,spart1,spartb1,spartoc1,k1, svoy
 for i=1 to 12
     nu=if(i<10,str(i,1),str(i,2))
     if .not.('*'+kmn&nu $ all_mes) .and. kmn&nu<>'  '
@@ -92,6 +92,9 @@ for i=1 to 12
             oplats=svon&nu
             if substr(m1,14,1)='1'
                 sprof=sprof+oplats
+            endif
+            if substr(m1,11,1)='1'
+                svoy=svoy+oplats
             endif
             ras_mes = substr(all_mes,2,2)
             mesnach=kmn&nu
@@ -152,8 +155,8 @@ if k1 = 1
             do SayNaUd with .f.,sr+end_shap,ltrim(str(sr,2))
         endif
     endif
-    do upartz   with spart,u4
-    sr=scanud(allud,'911',.t.,u4)    && bo¥­.
+    &&do upartz   with spart,u4
+    &&sr=scanud(allud,'911',.t.,u4)    && bo¥­.
     if sr>0 .and. sr<13 .and. SayLine
         do SayNaUd with .f.,sr+end_shap,ltrim(str(sr,2))
     endif
@@ -176,8 +179,9 @@ if sr>0 .and. sr<13 .and. SayLine
     do SayNaUd with .f.,sr+end_shap,ltrim(str(sr,2))
 endif
 
-do upartz  with spartb,u4
+do upartz  with svoy,u4
 sr=scanud(allud,'911',.t.,u4)    && B®e­ë¥
+
 if sr>0 .and. sr<13 .and. SayLine
     do SayNaUd with .f.,sr+end_shap,ltrim(str(sr,2))
 endif
@@ -281,12 +285,12 @@ do while imes<len(all_mes)
     if sr>0 .and. sr<13 .and. SayLine
         do SayNaUd with .f.,sr+end_shap,ltrim(str(sr,2))
     endif
-    IF skn->PMN<>1
-        sr=scanud(allud,'911',.t.,(new_2-old_2),ras_mes)
-        if sr>0 .and. sr<13 .and. SayLine
-            do SayNaUd with .f.,sr+end_shap,ltrim(str(sr,2))
-        endif
-    ENDIF
+&&    IF skn->PMN<>1
+&&        sr=scanud(allud,'911',.t.,(new_2-old_2),ras_mes)
+&&        if sr>0 .and. sr<13 .and. SayLine
+&&            do SayNaUd with .f.,sr+end_shap,ltrim(str(sr,2))
+&&        endif
+&&    ENDIF
     old_alim=old_alim+old_3
     new_alim=new_alim+new_3
     imes=imes+3
